@@ -1,0 +1,119 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo img {
+    height: 40px;
+    margin-right: 10px;
+}
+
+.nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Main Content */
+.container {
+    display: flex;
+    margin: 20px;
+    gap: 20px;
+}
+
+.main-news {
+    flex: 3;
+}
+
+.featured-news img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.featured-news p {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.news-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.news-item img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.news-item p {
+    font-size: 14px;
+    margin-top: 8px;
+}
+
+/* Sidebar */
+.sidebar {
+    flex: 1;
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar li {
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+/* Footer */
+.footer {
+    display: flex;
+    justify-content: space-between; /* Elemen akan berjauhan secara horizontal */
+    align-items: center; /* Elemen sejajar secara vertikal */
+    padding: 20px;
+    background-color: #007bff;
+    color: #fff;
+    gap: 20px;
+}
+
+.footer-logo, .footer-contact {
+    flex: 1; /* Setiap elemen mendapatkan ruang proporsional */
+    text-align: left; /* Atur teks rata kiri */
+}
+
+.footer-contact {
+    text-align: right; /* Kontak rata kanan untuk pemisahan */
+}
+
+.footer-rights {
+    text-align: center; /* Tambahkan teks hak cipta di bagian bawah jika tetap dibutuhkan */
+    flex-basis: 100%; /* Pastikan teks hak cipta memenuhi lebar penuh */
+    margin-top: 10px;
+    font-size: 14px;
+}
