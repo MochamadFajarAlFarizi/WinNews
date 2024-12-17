@@ -20,3 +20,7 @@ Route::get('/domestic', function () {
 Route::get('/trending', function () {
     return view('trending');
 })->name('trending');
+
+Route::get('/detail', function () {
+    return view('detail');
+})->name('detail');

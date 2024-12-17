@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WinNews</title>
+    <link rel="icon" type="image/png" href="{{ asset('image/logo.png') }}">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
     <!-- Hubungkan file app.css -->
@@ -37,84 +38,62 @@
 </header>
 
 
-<main class="container my-4 custom-main">
+<main class="container my-4 custom-main" style="padding-top: 75px;">
     <!-- Main News Section -->
     <section class="row mb-4">
         <!-- Featured News -->
         <div class="col-md-12 mb-3">
-            <div class="featured-news position-relative">
-                <img src="image/berita1.jpeg" alt="Main News" class="img-fluid w-100">
-                <div class="featured-caption position-absolute text-white p-3" style="bottom: 0; background: rgba(0, 0, 0, 0.5);">
-                    <h5>Geledah Rumah, KPK Sita Uang Tunai Rp 2.4 M Terkait Kasus Investasi Fiktif</h5>
+            <a href="{{ route('detail') }}" class="text-decoration-none text-dark">
+                <div class="featured-news position-relative">
+                    <img src="image/berita1.jpeg" alt="Main News" class="img-fluid w-100">
+                    <div class="featured-caption position-absolute text-white p-3" style="bottom: 0; background: rgba(0, 0, 0, 0.5);">
+                        <h5>Geledah Rumah, KPK Sita Uang Tunai Rp 2.4 M Terkait Kasus Investasi Fiktif</h5>
+                    </div>
                 </div>
-            </div>
+            </a>
         </div>
         
         <!-- News Grid -->
         <div class="row g-3">
             <div class="col-md-3">
-                <div class="card">
-                    <img src="image/berita2.jpeg" class="card-img-top" alt="News 1">
-                    <div class="card-body">
-                        <p class="card-text">Lorem ipsum dolor sit amet: Peran Inovasi Teknologi dalam Pendidikan Masa Kini</p>
+                <a href="{{ route('detail') }}" class="text-decoration-none text-dark">
+                    <div class="card">
+                        <img src="image/berita2.jpeg" class="card-img-top" alt="News 1">
+                        <div class="card-body">
+                            <p class="card-text">Lorem ipsum dolor sit amet: Peran Inovasi Teknologi dalam Pendidikan Masa Kini</p>
+                        </div>
                     </div>
-                </div>
+                </a>
             </div>
             <div class="col-md-3">
-                <div class="card">
-                    <img src="image/berita3.jpeg" class="card-img-top" alt="News 2">
-                    <div class="card-body">
-                        <p class="card-text">Lorem ipsum dolor sit amet: Peran Inovasi Teknologi dalam Pendidikan Masa Kini</p>
+                <a href="{{ route('detail') }}" class="text-decoration-none text-dark">
+                    <div class="card">
+                        <img src="image/berita3.jpeg" class="card-img-top" alt="News 2">
+                        <div class="card-body">
+                            <p class="card-text">Lorem ipsum dolor sit amet: Peran Inovasi Teknologi dalam Pendidikan Masa Kini</p>
+                        </div>
                     </div>
-                </div>
+                </a>
             </div>
             <div class="col-md-3">
-                <div class="card">
-                    <img src="image/berita4.jpeg" class="card-img-top" alt="News 3">
-                    <div class="card-body">
-                        <p class="card-text">Lorem ipsum dolor sit amet: Peran Inovasi Teknologi dalam Pendidikan Masa Kini</p>
+                <a href="{{ route('detail') }}" class="text-decoration-none text-dark">
+                    <div class="card">
+                        <img src="image/berita4.jpeg" class="card-img-top" alt="News 3">
+                        <div class="card-body">
+                            <p class="card-text">Lorem ipsum dolor sit amet: Peran Inovasi Teknologi dalam Pendidikan Masa Kini</p>
+                        </div>
                     </div>
-                </div>
+                </a>
             </div>
             <div class="col-md-3">
-                <div class="card">
-                    <img src="image/berita5.jpeg" class="card-img-top" alt="News 4">
-                    <div class="card-body">
-                        <p class="card-text">Lorem ipsum dolor sit amet: Peran Inovasi Teknologi dalam Pendidikan Masa Kini</p>
+                <a href="{{ route('detail') }}" class="text-decoration-none text-dark">
+                    <div class="card">
+                        <img src="image/berita5.jpeg" class="card-img-top" alt="News 4">
+                        <div class="card-body">
+                            <p class="card-text">Lorem ipsum dolor sit amet: Peran Inovasi Teknologi dalam Pendidikan Masa Kini</p>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="card">
-                    <img src="image/berita5.jpeg" class="card-img-top" alt="News 4">
-                    <div class="card-body">
-                        <p class="card-text">Lorem ipsum dolor sit amet: Peran Inovasi Teknologi dalam Pendidikan Masa Kini</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="card">
-                    <img src="image/berita5.jpeg" class="card-img-top" alt="News 4">
-                    <div class="card-body">
-                        <p class="card-text">Lorem ipsum dolor sit amet: Peran Inovasi Teknologi dalam Pendidikan Masa Kini</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="card">
-                    <img src="image/berita5.jpeg" class="card-img-top" alt="News 4">
-                    <div class="card-body">
-                        <p class="card-text">Lorem ipsum dolor sit amet: Peran Inovasi Teknologi dalam Pendidikan Masa Kini</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="card">
-                    <img src="image/berita5.jpeg" class="card-img-top" alt="News 4">
-                    <div class="card-body">
-                        <p class="card-text">Lorem ipsum dolor sit amet: Peran Inovasi Teknologi dalam Pendidikan Masa Kini</p>
-                    </div>
-                </div>
+                </a>
             </div>
         </div>
     </section>

@@ -20,7 +20,7 @@
         
         <!-- Navigation Links -->
         <nav class="nav">
-            <a class="active" href="{{ route('home') }}">Home</a>
+            <a class="deactive" href="{{ route('home') }}">Home</a>
             <a class="deactive" href="{{ route('news') }}">News</a>
             <a class="deactive" href="{{ route('domestic') }}">Domestic</a>
             <a class="deactive" href="{{ route('trending') }}">Trending</a>
@@ -36,47 +36,45 @@
     </div>
 </header>
 
-
-<main class="container my-4"style="padding-top: 75px;" >
-    <div class="row">
+<main class="container my-4" style="padding-top: 75px;">
         <!-- Konten Utama -->
         <section class="col-md-8">
             <div class="card mb-4">
-                <a href="{{ route('detail') }}" class="text-decoration-none text-dark">
-                    <img src="image/berita1.jpeg" alt="Main News" class="card-img-top">
-                    <div class="card-body">
-                        <h5 class="card-title fw-bold">
-                            Geledah Rumah, KPK Sita Uang Tunai Rp 2.4 M Terkait Kasus Investasi Fiktif
-                        </h5>
-                    </div>
-                </a>
-            </div>
+                <img src="image/berita1.jpeg" alt="Main News" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title fw-bold">
+                        Geledah Rumah, KPK Sita Uang Tunai Rp 2.4 M Terkait Kasus Investasi Fiktif
+                    </h5>
+                    <p class="card-text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod massa hendrerit eu. Maecenas volutpat 
+                        ligula nec erat interdum. Fusce sit amet felis eget odio eleifend laoreet vitae sit amet mi. Sed nec ligula 
+                        a velit pharetra tristique non eu justo. Mauris eget ligula id elit pharetra feugiat vel eget justo.
+                        <br><br>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ac quam in lectus tincidunt ultricies. In eget 
+                        nibh eget risus sodales tincidunt a vel magna. Donec sollicitudin elit ut augue feugiat, in tincidunt ligula 
+                        faucibus.
+                        <br><br>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ac quam in lectus tincidunt ultricies. In eget 
+                        nibh eget risus sodales tincidunt a vel magna. Donec sollicitudin elit ut augue feugiat, in tincidunt ligula 
+                        faucibus.
+                        <br><br>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ac quam in lectus tincidunt ultricies. In eget 
+                        nibh eget risus sodales tincidunt a vel magna. Donec sollicitudin elit ut augue feugiat, in tincidunt ligula 
+                        faucibus.
+                        <br><br>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ac quam in lectus tincidunt ultricies. In eget 
+                        nibh eget risus sodales tincidunt a vel magna. Donec sollicitudin elit ut augue feugiat, in tincidunt ligula 
+                        faucibus.
+                        <br><br>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ac quam in lectus tincidunt ultricies. In eget 
+                        nibh eget risus sodales tincidunt a vel magna. Donec sollicitudin elit ut augue feugiat, in tincidunt ligula 
+                        faucibus.
+                        <br><br>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ac quam in lectus tincidunt ultricies. In eget 
+                        nibh eget risus sodales tincidunt a vel magna. Donec sollicitudin elit ut augue feugiat, in tincidunt ligula 
+                        faucibus.
 
-            <!-- Berita Grid -->
-            <div class="row">
-                <div class="col-md-6 mb-4">
-                    <a href="{{ route('detail') }}" class="text-decoration-none text-dark">
-                        <img src="image/berita2.jpeg" alt="News 1" class="img-fluid">
-                        <p>Lorem ipsum dolor sit amet: Peran Inovasi Teknologi dalam Pendidikan Masa Kini</p>
-                    </a>
-                </div>
-                <div class="col-md-6 mb-4">
-                    <a href="{{ route('detail') }}" class="text-decoration-none text-dark">
-                        <img src="image/berita3.jpeg" alt="News 2" class="img-fluid">
-                        <p>Lorem ipsum dolor sit amet: Peran Inovasi Teknologi dalam Pendidikan Masa Kini</p>
-                    </a>
-                </div>
-                <div class="col-md-6 mb-4">
-                    <a href="{{ route('detail') }}" class="text-decoration-none text-dark">
-                        <img src="image/berita4.jpeg" alt="News 3" class="img-fluid">
-                        <p>Lorem ipsum dolor sit amet: Peran Inovasi Teknologi dalam Pendidikan Masa Kini</p>
-                    </a>
-                </div>
-                <div class="col-md-6 mb-4">
-                    <a href="{{ route('detail') }}" class="text-decoration-none text-dark">
-                        <img src="image/berita5.jpeg" alt="News 4" class="img-fluid">
-                        <p>Lorem ipsum dolor sit amet: Peran Inovasi Teknologi dalam Pendidikan Masa Kini</p>
-                    </a>
+                    </p>
                 </div>
             </div>
         </section>
@@ -107,14 +105,11 @@
                 </li>
             </ul>
         </aside>
-    </div>
 </main>
-
-
 
     <!-- Footer -->
     <footer class="custom-footer" style="background: #D9D9D9; padding-top: 10px;">
-        <div class="container">
+    <div class="container">
         <div class="d-flex justify-content-between align-items-center">
             <div class="col-md-5 d-flex align-items-center">
                 <img src="image/WinniCode.png" alt="WinNews" class="me-3" style="width: 100%; height: auto;">
@@ -139,7 +134,8 @@
                 </p>
             </div>
         </div>
-        </div>
+    </div>
+    
     <p class="text-center mt-3 bg-primary text-white">© 2024 PT WinniCode Garuda Indonesia, All rights reserved</p>
 </footer>
 </body>

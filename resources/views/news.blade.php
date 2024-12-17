@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WinNews</title>
+    <link rel="icon" type="image/png" href="{{ asset('image/logo.png') }}">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
     <!-- Hubungkan file app.css -->
@@ -46,7 +47,7 @@
 </header>
 
     <!-- Main Content -->
-    <main class="container-fluid px-5 my-4">
+    <main class="container-fluid px-5 my-4" style="padding-top: 75px;">
         <!-- Daftar Berita -->
         <div class="row">
             <div class="col-12">
@@ -54,64 +55,82 @@
                     <!-- Berita Item -->
                     <div class="list-group-item d-flex justify-content-between align-items-center border rounded mb-3 p-3">
                         <div class="flex-grow-1">
+                        <a href="{{ route('detail') }}" class="text-decoration-none text-dark ">
                             <p class="fw-bold mb-1">Lorem Ipsum Dolor Sit Amet: Peran Inovasi Teknologi dalam Pendidikan Masa Kini</p>
                             <small class="text-muted">6 hours ago</small>
+                        </a>
                         </div>
                         <img src="image/sample.jpeg" alt="Sample Logo" class="ms-3" style="width: 80px; height: 80px;">
                     </div>
                     <div class="list-group-item d-flex justify-content-between align-items-center border rounded mb-3 p-3">
                         <div class="flex-grow-1">
+                        <a href="{{ route('detail') }}" class="text-decoration-none text-dark ">
                             <p class="fw-bold mb-1">Lorem Ipsum Dolor Sit Amet: Peran Inovasi Teknologi dalam Pendidikan Masa Kini</p>
                             <small class="text-muted">6 hours ago</small>
+                            </a>
                         </div>
                         <img src="image/sample.jpeg" alt="Sample Logo" class="ms-3" style="width: 80px; height: 80px;">
                     </div>
                     <div class="list-group-item d-flex justify-content-between align-items-center border rounded mb-3 p-3">
                         <div class="flex-grow-1">
+                        <a href="{{ route('detail') }}" class="text-decoration-none text-dark ">
                             <p class="fw-bold mb-1">Lorem Ipsum Dolor Sit Amet: Peran Inovasi Teknologi dalam Pendidikan Masa Kini</p>
                             <small class="text-muted">6 hours ago</small>
+                            </a>
                         </div>
                         <img src="image/sample.jpeg" alt="Sample Logo" class="ms-3" style="width: 80px; height: 80px;">
                     </div>
                     <div class="list-group-item d-flex justify-content-between align-items-center border rounded mb-3 p-3">
                         <div class="flex-grow-1">
+                        <a href="{{ route('detail') }}" class="text-decoration-none text-dark ">
                             <p class="fw-bold mb-1">Lorem Ipsum Dolor Sit Amet: Peran Inovasi Teknologi dalam Pendidikan Masa Kini</p>
                             <small class="text-muted">6 hours ago</small>
+                            </a>
                         </div>
                         <img src="image/sample.jpeg" alt="Sample Logo" class="ms-3" style="width: 80px; height: 80px;">
                     </div>
                     <div class="list-group-item d-flex justify-content-between align-items-center border rounded mb-3 p-3">
                         <div class="flex-grow-1">
+                        <a href="{{ route('detail') }}" class="text-decoration-none text-dark ">
                             <p class="fw-bold mb-1">Lorem Ipsum Dolor Sit Amet: Peran Inovasi Teknologi dalam Pendidikan Masa Kini</p>
                             <small class="text-muted">6 hours ago</small>
+                            </a>
                         </div>
                         <img src="image/sample.jpeg" alt="Sample Logo" class="ms-3" style="width: 80px; height: 80px;">
                     </div>
                     <div class="list-group-item d-flex justify-content-between align-items-center border rounded mb-3 p-3">
                         <div class="flex-grow-1">
+                        <a href="{{ route('detail') }}" class="text-decoration-none text-dark ">
                             <p class="fw-bold mb-1">Lorem Ipsum Dolor Sit Amet: Peran Inovasi Teknologi dalam Pendidikan Masa Kini</p>
                             <small class="text-muted">6 hours ago</small>
+                            </a>
                         </div>
                         <img src="image/sample.jpeg" alt="Sample Logo" class="ms-3" style="width: 80px; height: 80px;">
                     </div>
                     <div class="list-group-item d-flex justify-content-between align-items-center border rounded mb-3 p-3">
                         <div class="flex-grow-1">
+                        <a href="{{ route('detail') }}" class="text-decoration-none text-dark ">
                             <p class="fw-bold mb-1">Lorem Ipsum Dolor Sit Amet: Peran Inovasi Teknologi dalam Pendidikan Masa Kini</p>
                             <small class="text-muted">6 hours ago</small>
+                            </a>
                         </div>
                         <img src="image/sample.jpeg" alt="Sample Logo" class="ms-3" style="width: 80px; height: 80px;">
                     </div>
                     <div class="list-group-item d-flex justify-content-between align-items-center border rounded mb-3 p-3">
                         <div class="flex-grow-1">
+                        <a href="{{ route('detail') }}" class="text-decoration-none text-dark ">
                             <p class="fw-bold mb-1">Lorem Ipsum Dolor Sit Amet: Peran Inovasi Teknologi dalam Pendidikan Masa Kini</p>
                             <small class="text-muted">6 hours ago</small>
+                            </a>
                         </div>
                         <img src="image/sample.jpeg" alt="Sample Logo" class="ms-3" style="width: 80px; height: 80px;">
                     </div>
                     <div class="list-group-item d-flex justify-content-between align-items-center border rounded mb-3 p-3">
                         <div class="flex-grow-1">
+                        <a href="{{ route('detail') }}" class="text-decoration-none text-dark ">
                             <p class="fw-bold mb-1">Lorem Ipsum Dolor Sit Amet: Peran Inovasi Teknologi dalam Pendidikan Masa Kini</p>
                             <small class="text-muted">6 hours ago</small>
+                        </a>
                         </div>
                         <img src="image/sample.jpeg" alt="Sample Logo" class="ms-3" style="width: 80px; height: 80px;">
                     </div>

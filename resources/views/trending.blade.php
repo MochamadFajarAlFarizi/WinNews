@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WinNews</title>
+    <link rel="icon" type="image/png" href="{{ asset('image/logo.png') }}">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
     @vite('resources/css/app.css')
@@ -36,23 +37,25 @@
 </header>
 
     <!-- Main Content -->
-    <main class="container-fluid px-5 my-4">
+    <main class="container-fluid px-5 my-4" style="padding-top: 75px;">
         <!-- Daftar Berita -->
         <div class="row">
             <div class="col-12">
                 <div class="list-group w-100">
                     <!-- Berita Item -->
                      
-                    <div class="list-group-item d-flex justify-content-between align-items-center border rounded mb-3 p-3">
+    <div class="list-group-item d-flex justify-content-between align-items-center border rounded mb-3 p-3">
     <div class="d-flex align-items-center">
         <div class="me-3">
             <!-- Nomor 1 -->
+            <a href="{{ route('detail') }}" class="text-decoration-none text-dark ">
             <span class="badge rounded-circle" style="font-size: 1.2rem; background-color: gold;">1</span>
         </div>
         <div>
             <p class="fw-bold mb-1">Lorem Ipsum Dolor Sit Amet: Peran Inovasi Teknologi dalam Pendidikan Masa Kini</p>
             <small class="text-muted">6 hours ago</small>
         </div>
+        </a>
     </div>
     <img src="image/sample.jpeg" alt="Sample Logo" class="ms-3" style="width: 80px; height: 80px;">
 </div>
@@ -61,12 +64,14 @@
     <div class="d-flex align-items-center">
         <div class="me-3">
             <!-- Nomor 2 -->
+            <a href="{{ route('detail') }}" class="text-decoration-none text-dark ">
             <span class="badge rounded-circle" style="font-size: 1.2rem; background-color: silver;">2</span>
         </div>
         <div>
             <p class="fw-bold mb-1">Lorem Ipsum Dolor Sit Amet: Peran Inovasi Teknologi dalam Pendidikan Masa Kini</p>
             <small class="text-muted">6 hours ago</small>
         </div>
+        </a>
     </div>
     <img src="image/sample.jpeg" alt="Sample Logo" class="ms-3" style="width: 80px; height: 80px;">
 </div>
@@ -75,48 +80,56 @@
     <div class="d-flex align-items-center">
         <div class="me-3">
             <!-- Nomor 3 -->
+            <a href="{{ route('detail') }}" class="text-decoration-none text-dark ">
             <span class="badge rounded-circle" style="font-size: 1.2rem; background-color: #cd7f32;">3</span>
         </div>
         <div>
             <p class="fw-bold mb-1">Lorem Ipsum Dolor Sit Amet: Peran Inovasi Teknologi dalam Pendidikan Masa Kini</p>
             <small class="text-muted">6 hours ago</small>
         </div>
+        </a>
     </div>
     <img src="image/sample.jpeg" alt="Sample Logo" class="ms-3" style="width: 80px; height: 80px;">
 </div>
 <div class="list-group-item d-flex justify-content-between align-items-center border rounded mb-3 p-3">
     <div class="d-flex align-items-center">
         <div class="me-3">
+        <a href="{{ route('detail') }}" class="text-decoration-none text-dark ">
             <span class="badge bg-primary rounded-circle" style="font-size: 1.2rem;">4</span>
         </div>
         <div>
             <p class="fw-bold mb-1">Lorem Ipsum Dolor Sit Amet: Peran Inovasi Teknologi dalam Pendidikan Masa Kini</p>
             <small class="text-muted">6 hours ago</small>
         </div>
+        </a>
     </div>
     <img src="image/sample.jpeg" alt="Sample Logo" class="ms-3" style="width: 80px; height: 80px;">
 </div>
 <div class="list-group-item d-flex justify-content-between align-items-center border rounded mb-3 p-3">
     <div class="d-flex align-items-center">
         <div class="me-3">
+        <a href="{{ route('detail') }}" class="text-decoration-none text-dark ">
             <span class="badge bg-primary rounded-circle" style="font-size: 1.2rem;">5</span>
         </div>
         <div>
             <p class="fw-bold mb-1">Lorem Ipsum Dolor Sit Amet: Peran Inovasi Teknologi dalam Pendidikan Masa Kini</p>
             <small class="text-muted">6 hours ago</small>
         </div>
+        </a>
     </div>
     <img src="image/sample.jpeg" alt="Sample Logo" class="ms-3" style="width: 80px; height: 80px;">
 </div>
 <div class="list-group-item d-flex justify-content-between align-items-center border rounded mb-3 p-3">
     <div class="d-flex align-items-center">
         <div class="me-3">
+        <a href="{{ route('detail') }}" class="text-decoration-none text-dark ">
             <span class="badge bg-primary rounded-circle" style="font-size: 1.2rem;">6</span>
         </div>
         <div>
             <p class="fw-bold mb-1">Lorem Ipsum Dolor Sit Amet: Peran Inovasi Teknologi dalam Pendidikan Masa Kini</p>
             <small class="text-muted">6 hours ago</small>
         </div>
+        </a>
     </div>
     <img src="image/sample.jpeg" alt="Sample Logo" class="ms-3" style="width: 80px; height: 80px;">
 </div>
