@@ -26,8 +26,8 @@
             </nav>
 
             <!-- Search Bar -->
-            <form class="d-flex ms-3">
-                <input class="form-control me-2" type="search" placeholder="Search..." aria-label="Search">
+            <form class="d-flex ms-3" method="GET" action="{{ route('search') }}">
+                <input class="form-control me-2" name="q" type="search" placeholder="Search..." aria-label="Search">
                 <button class="btn btn-light" type="submit">
                     <i class="bi bi-search"></i>
                 </button>

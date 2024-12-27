@@ -9,23 +9,20 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
     @vite('resources/css/app.css')
 </head>
+
 <body>
+    <!-- Header -->
     <header class="custom-header">
         <div class="container-fluid d-flex justify-content-between align-items-center">
-            <!-- Logo -->
             <div class="d-flex align-items-center">
                 <img src="image/News.png" alt="WinNews Logo" class="me-3">
             </div>
-            
-            <!-- Navigation Links -->
             <nav class="nav">
-                <a class="active" href="{{ route('home') }}">Home</a>
+                <a class="deactive" href="{{ route('home') }}">Home</a>
                 <a class="deactive" href="{{ route('news') }}">News</a>
                 <a class="deactive" href="{{ route('domestic') }}">Domestic</a>
                 <a class="deactive" href="{{ route('trending') }}">Trending</a>
             </nav>
-
-            <!-- Search Bar -->
             <form class="d-flex ms-3" method="GET" action="{{ route('search') }}">
                 <input class="form-control me-2" name="q" type="search" placeholder="Search..." aria-label="Search">
                 <button class="btn btn-light" type="submit">
@@ -35,53 +32,60 @@
         </div>
     </header>
 
-    <main class="container my-4" style="padding-top: 75px;">
-        <div class="row">
-            <!-- Konten Utama -->
-            <section class="col-md-8">
-            @if($mainNews)
-    <div class="card mb-4">
-        <a href="{{ route('detail', $mainNews->id) }}" class="text-decoration-none text-dark">
-            <img src="{{ $mainNews->image }}" alt="{{ $mainNews->title }}" class="card-img-top">
-            <div class="card-body">
-                <h5 class="card-title fw-bold">{{ $mainNews->title }}</h5>
+    <!-- Main Content -->
+    <main class="container-fluid px-5 my-4" style="padding-top: 75px;">
+    <div class="row">
+        @if(request('q'))
+            <div class="col-12">
+                <h2 class="mb-4">Search Results for "{{ request('q') }}"</h2>
+                @if($news->isNotEmpty())
+                    <div class="list-group w-100">
+                        @foreach ($news as $item)
+                            <div class="list-group-item d-flex justify-content-between align-items-center border rounded mb-3 p-3">
+                                <div class="flex-grow-1">
+                                    <a href="{{ route('detail', $item->id) }}" class="text-decoration-none text-dark">
+                                        <h5 class="fw-bold mb-1">{{ $item->title }}</h5>
+                                        <p>{{ Str::limit($item->content, 100) }}</p>
+                                        <small class="text-muted">{{ $item->created_at->diffForHumans() }}</small>
+                                    </a>
+                                </div>
+                                <img src="{{ $item->image }}" alt="{{ $item->title }}" class="ms-3" style="width: 80px; height: 80px; object-fit: cover;">
+                            </div>
+                        @endforeach
+                    </div>
+                    <div class="mt-4">
+                        {{ $news->links() }}
+                    </div>
+                @else
+                    <p>No results found for "{{ request('q') }}"</p>
+                @endif
             </div>
-        </a>
-    </div>
-@endif
-
-
-                <!-- Berita Grid -->
-                <div class="row">
-                    @foreach($news as $item)
-                        <div class="col-md-6 mb-4">
-                            <a href="{{ route('detail', $item->id) }}" class="text-decoration-none text-dark">
-                                <img src="{{ $item->image }}" alt="{{ $item->title }}" class="img-fluid">
-                                <p>{{ Str::limit($item->title, 100) }}</p>
-                            </a>
+        @else
+            <!-- Tampilkan konten utama jika tidak ada pencarian -->
+            <div class="col-12">
+                <h2 class="mb-4">Latest News</h2>
+                <div class="list-group w-100">
+                    @foreach ($news as $item)
+                        <div class="list-group-item d-flex justify-content-between align-items-center border rounded mb-3 p-3">
+                            <div class="flex-grow-1">
+                                <a href="{{ route('detail', $item->id) }}" class="text-decoration-none text-dark">
+                                    <h5 class="fw-bold mb-1">{{ $item->title }}</h5>
+                                    <p>{{ Str::limit($item->content, 100) }}</p>
+                                    <small class="text-muted">{{ $item->created_at->diffForHumans() }}</small>
+                                </a>
+                            </div>
+                            <img src="{{ $item->image }}" alt="{{ $item->title }}" class="ms-3" style="width: 80px; height: 80px; object-fit: cover;">
                         </div>
                     @endforeach
                 </div>
-            </section>
+            </div>
+        @endif
+    </div>
+</main>
 
-            <!-- Sidebar (Latest News) -->
-            <aside class="col-md-4">
-                <h3 class="mb-3">Latest News</h3>
-                <ul class="list-group list-group-flush">
-                    @foreach($latestNews as $item)
-                        <li class="list-group-item">
-                            <a href="{{ route('detail', $item->id) }}" class="text-decoration-none text-dark">
-                                {{ $item->title }}
-                            </a>
-                        </li>
-                    @endforeach
-                </ul>
-            </aside>
-        </div>
-    </main>
 
- <!-- Footer -->
- <footer class="custom-footer" style="background: #D9D9D9; padding-top: 10px;">
+    <!-- Footer -->
+    <footer class="custom-footer" style="background: #D9D9D9; padding-top: 10px;">
         <div class="container">
             <div class="d-flex justify-content-between align-items-center">
                 <div class="col-md-5 d-flex align-items-center">
@@ -112,4 +116,3 @@
     </footer>
 </body>
 </html>
-

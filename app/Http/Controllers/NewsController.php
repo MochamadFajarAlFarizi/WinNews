@@ -2,13 +2,17 @@
 namespace App\Http\Controllers;
 
 use App\Models\News;
+use App\Models\Category; 
+use Illuminate\Support\Facades\Storage;
+use Illuminate\Http\Request;
 
 class NewsController extends Controller
 {
     public function index()
     {
-        $news = News::all(); // Ambil semua berita
-        return view('news', ['news' => $news]);
+        $news = News::with('author', 'category')->paginate(10); // Muat relasi author dan category
+        $categories = Category::all(); // Ambil semua kategori
+        return view('admin.news.index', compact('news', 'categories'));
     }
 
     public function trending()
@@ -30,5 +34,21 @@ class NewsController extends Controller
     
         return view('detail', compact('news', 'latestNews'));
     }
-    
+    public function news()
+    {
+        $news = News::with('author', 'category')->paginate(10); // Muat relasi author dan category
+        $categories = Category::all(); // Ambil semua kategori
+        return view('news', compact('news', 'categories'));
+    }
+
+    public function search(Request $request)
+    {
+        $keyword = $request->input('q'); // Ambil kata kunci dari input form
+        $news = News::where('title', 'LIKE', "%$keyword%")
+            ->orWhere('content', 'LIKE', "%$keyword%")
+            ->paginate(10);
+
+        return view('search', compact('news', 'keyword'));
+    }
+
 }
