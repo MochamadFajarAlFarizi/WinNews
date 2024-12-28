@@ -4,15 +4,15 @@ WinNews adalah sebuah aplikasi portal berita berbasis web yang memudahkan penggu
 
 Fitur Utama
 
-Halaman utama untuk menampilkan berita terkini.
+*Halaman utama untuk menampilkan berita terkini.
 
-Admin dashboard untuk mengelola berita.
+*Admin dashboard untuk mengelola berita.
 
-CRUD (Create, Read, Update, Delete) berita.
+*CRUD (Create, Read, Update, Delete) berita.
 
-Kategori berita untuk pengelompokan.
+*Kategori berita untuk pengelompokan.
 
-Pagination untuk navigasi berita yang nyaman.
+*Pagination untuk navigasi berita yang nyaman.
 
 Demo
 
