@@ -64,6 +64,31 @@
             background-color: #4A3AFF;
             border: none;
         }
+
+
+.pagination .page-item {
+    margin: 0 0.25rem; /* Beri jarak antar item */
+}
+
+.pagination .page-link {
+    font-size: 0.75rem; /* Atur ukuran font atau ikon */
+    padding: 0.5rem; /* Sesuaikan padding */
+}
+
+.pagination .page-link svg {
+    width: 16px; /* Atur lebar ikon */
+    height: 16px; /* Atur tinggi ikon */
+}
+
+.pagination-small {
+        font-size: 0.75rem; /* Ukuran teks lebih kecil */
+        margin: 10px auto; /* Atur margin */
+        font-size: 0.875rem; /* Ukuran normal */
+        display: flex; /* Tampilkan sebagai fleksibel */
+        justify-content: center; /* Pagination di tengah */
+        margin-top: 20px; /* Jarak dari elemen sebelumnya */
+    }
+
         
     </style>
 </head>
@@ -132,10 +157,11 @@
                 </tbody>
 
             </table>
-            <div class="mt-3">
+
+        </div>
+        <div class="pagination-small">
                 {{ $news->links() }}
             </div>
-        </div>
     </div>
 
     <!-- Modal -->
